@@ -1,878 +1,117 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 6.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="一个简单的博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="后山漫雾">
-<meta property="og:url" content="http://example.com/">
-<meta property="og:site_name" content="后山漫雾">
-<meta property="og:description" content="一个简单的博客">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="后山漫雾">
-<meta property="article:tag" content="计算机,哲学,心理学,经济学">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="http://example.com/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>后山漫雾</title>
-  
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">后山漫雾</h1>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-      <p class="site-subtitle" itemprop="description">睁大眼睛，保持沉默<br/>See anything,but say nothing.</p>
-  </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section">首页</a>
-
-  </li>
-        <li class="menu-item menu-item-about">
-
-    <a href="/about/" rel="section">关于</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section">标签</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section">归档</a>
-
-  </li>
-  </ul>
-</nav>
-
-
-
-
-</div>
-    </header>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>后山漫雾 | 睁大眼睛，保持沉默&lt;br/&gt;See anything,but say nothing.</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/1967000334.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="后山漫雾">
-      <meta itemprop="description" content="一个简单的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="后山漫雾">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/1967000334.html" class="post-title-link" itemprop="url">别问我</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-04 19:31:05" itemprop="dateCreated datePublished" datetime="2023-06-04T19:31:05+08:00">2023-06-04</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>0</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
-        </div>
-      </header>
+<link rel="stylesheet" href="/css/style.css">
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          
-      
-    </div>
+<link rel="stylesheet" href="/css/markdown.css">
 
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+<link rel="stylesheet" href="/css/fonts.css">
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/1075718510.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="后山漫雾">
-      <meta itemprop="description" content="一个简单的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="后山漫雾">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/1075718510.html" class="post-title-link" itemprop="url">风险控制的艺术 | 安全边际</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-04 17:43:22 / 修改时间：19:15:29" itemprop="dateCreated datePublished" datetime="2023-06-04T17:43:22+08:00">2023-06-04</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.6k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>6 分钟</span>
-            </span>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>不要温顺地走入那良夜。<br>Don’t go meek into that good night.
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/1075718510.html#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
+<meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="header">
+    <a class="logo" href="/">后山漫雾</a>
+    <ul class="nav">
         
-      
-    </div>
-
+        <li><a href="/">首页</a></li>
+        
+        <li><a href="/archives">归档</a></li>
+        
+        <li><a href="/about">关于</a></li>
+        
+    </ul>
+</div>
+                
+                <div class="post-list">
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/1494287584.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="后山漫雾">
-      <meta itemprop="description" content="一个简单的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="后山漫雾">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/1494287584.html" class="post-title-link" itemprop="url">考研信息汇总 | 2025</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-04 14:38:17 / 修改时间：19:21:03" itemprop="dateCreated datePublished" datetime="2023-06-04T14:38:17+08:00">2023-06-04</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>697</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>3 分钟</span>
-            </span>
-
+    <div class="post">
+        <a class="post-title" href="/posts/1967000334.html">别问我</a>
+        <div class="post-except">
+            
+            <a class="read-more" href="/posts/1967000334.html"> ... </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <span id="more"></span>
-<h2 id="25考研时间节点"><a href="#25考研时间节点" class="headerlink" title="25考研时间节点"></a>25考研时间节点</h2><ul>
-<li><strong>预报名</strong>：2024年9月份下旬</li>
-<li><strong>正式报名</strong>：2024年10月份中下旬</li>
-<li><strong>打印准考证</strong>：2024年12月份中下旬</li>
-<li><strong>初试</strong>：2024年12月下旬（一般在12月份倒数第二周的周六日，即圣诞节前后）</li>
-<li><strong>查分</strong>：2025年2月份</li>
-<li><strong>国家线&#x2F;自划线公布</strong>：2025年3月份</li>
-<li><strong>复试&#x2F;调剂&#x2F;拟录取</strong>：2025年3月份中下旬</li>
-</ul>
-<h2 id="考研四条线"><a href="#考研四条线" class="headerlink" title="考研四条线"></a>考研四条线</h2><ol>
-<li><strong>单科线</strong>：即英语&#x2F;政治&#x2F;数学&#x2F;专业课的单科分数线<ul>
-<li>全国34所自划线院校有自己的单科线，其余学校是国家划定的单科线</li>
-<li>单科过线才能进入复试</li>
-</ul>
-</li>
-<li><strong>院校线</strong>：即国家划定的研究生录取线<ul>
-<li>单科和总分同时大于等于国家线才能进入复试</li>
-<li>近年的考研国家线可以自行查询</li>
-</ul>
-</li>
-<li><strong>国家线</strong></li>
-<li><strong>录取线</strong>：即该专业拟录取名单中最后一名拟录取考生的分数</li>
-</ol>
-<h2 id="学硕与专硕"><a href="#学硕与专硕" class="headerlink" title="学硕与专硕"></a>学硕与专硕</h2><ol>
-<li><strong>学硕</strong>：<ul>
-<li>以培养教学和科研人才为主</li>
-<li>全日制学习</li>
-<li>学制一般为3年</li>
-</ul>
-</li>
-<li><strong>专硕</strong>：<ul>
-<li>以培养特定职业高层次人才为主</li>
-<li>大部分为全日制，小部分为非全日制</li>
-<li>学制一般为2-3年</li>
-</ul>
-</li>
-<li><strong>学硕与专硕的区别</strong>：<ul>
-<li>学硕可调剂到专硕，专硕不可调剂到学硕</li>
-<li>学硕可以直博，专硕不可直博</li>
-</ul>
-</li>
-</ol>
-<h2 id="计算机类-学硕与专硕专业及科目"><a href="#计算机类-学硕与专硕专业及科目" class="headerlink" title="计算机类 | 学硕与专硕专业及科目"></a>计算机类 | 学硕与专硕专业及科目</h2><ol>
-<li><p>学硕可选专业：</p>
-<ul>
-<li>(081200)计算机科学与技术</li>
-<li>(083500)软件工程</li>
-<li>(083900)网络空间安全</li>
-</ul>
-</li>
-<li><p>专硕可选专业：</p>
-<ul>
-<li>(081104)模式识别与智能系统</li>
-<li>(085400)电子信息</li>
-<li>(085404)计算机技术</li>
-<li>(085405)软件工程</li>
-<li>(085410)人工智能</li>
-<li>(085411)大数据技术与工程</li>
-<li>(085412)网络与信息安全</li>
-</ul>
-</li>
-<li><p>初试科目：</p>
-</li>
-</ol>
-<ul>
-<li>101 思想政治理论<ul>
-<li>统考</li>
-<li>100分</li>
-</ul>
-</li>
-<li>201 英语（一）&#x2F; 204 英语（二）<ul>
-<li>统考</li>
-<li>100分</li>
-</ul>
-</li>
-<li>301 数学（一）&#x2F; 302 数学（二）<ul>
-<li>统考</li>
-<li>150分</li>
-</ul>
-</li>
-<li>408 计算机学科专业基础 &#x2F; 940 计算机网络与安全<ul>
-<li>150分</li>
-</ul>
-</li>
-</ul>
-<ol start="4">
-<li><p>复试科目：</p>
-<ul>
-<li>F0211 程序设计实践（上机）</li>
-<li>F0216 程序设计与攻防实践（上机）</li>
-</ul>
-</li>
-<li><p>复试办法：</p>
-</li>
-</ol>
-<h2 id="考研考试科目"><a href="#考研考试科目" class="headerlink" title="考研考试科目"></a>考研考试科目</h2><ol>
-<li>英语<ul>
-<li>总分为100</li>
-<li>分为英语（一）和英语（二）</li>
-<li>一般情况下，学硕考英语（一），专硕考英语（二）</li>
-</ul>
-</li>
-<li>政治<ul>
-<li>全国统考</li>
-<li>总分为100</li>
-<li>除了管综的7个专业，其他专业初试都要考政治</li>
-</ul>
-</li>
-<li>数学<ul>
-<li>总分为150</li>
-<li>分为数学（一）、数学（二）和396经济类综合联考，难度根据顺序依次递减</li>
-</ul>
-</li>
-<li>专业课<ul>
-<li>总分分为150分和300分</li>
-<li>分为全国统考和自主命题</li>
-<li>各个院校、专业情况都不同</li>
-<li>详情查询招生简章</li>
-</ul>
-</li>
-</ol>
-
-      
+        <div class="post-date">2023.06.04</div>
     </div>
-
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <div class="post">
+        <a class="post-title" href="/posts/1075718510.html">风险控制的艺术 | 安全边际</a>
+        <div class="post-except">
+            不要温顺地走入那良夜。Don’t go meek into that good night. 
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="后山漫雾">
-      <meta itemprop="description" content="一个简单的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="后山漫雾">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/1.html" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2023-06-04 00:29:16 / 修改时间：12:18:13" itemprop="dateCreated datePublished" datetime="2023-06-04T00:29:16+08:00">2023-06-04</time>
-            </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>1.8k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>7 分钟</span>
-            </span>
-
+什么是安全边际？       安全边际与冗余备份这两个思维模型非常相似，它们同起源于工程学、质量管理学，在投资领域也被称为“价值投资的基石”，在工程学与质量管理学里叫安全系数，英文翻译为 Factor of safety 或 Safety factor，简称为SF，是指一个结构或是机械所能负荷的负载可以超过预期负载的程度。安全系数为大于1的数，值越大，表示结构或机械越安全。
+  
+            <a class="read-more" href="/posts/1075718510.html"> ... </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p><strong>1. 免费123231231</strong></p>
-<p>互联网产品免费提供服务，然后通过增值服务或者广告之类变现，现在来看是一个很通行的模式了，但是十多年前可不是这样的，比如说邮箱是需要付费的，照片存储服务 Flickr 是需要付费的，甚至在网络久发达地区，比如说美国，eBay&#x2F;PayPal 到现在都还是需要手续费的，卖一个东西差不多要交 10% 的手续费。这个设计可能不够精妙，过于简单粗暴，但是实在是太有效了。</p>
-<p><strong>2. 邀请奖励 (referral bonus)</strong></p>
-<p>题主提到了 Dropbox 邀请好友获得额外空间，那么或许也听过 PayPal 邀请好友，然后邀请人和被邀请人都拿到 10 块钱。这一措施让 PayPal 在几个月之内用户从一百万增长到五百万，当然这也是有成本的，那就是每个新用户获取成本是 20 块钱。其实这个成本还是相对比较低的，而且随着时间的推移，10 块钱的的奖励变成了 5 块，后来还需要连上借记卡才可以拿到，所以获取成本就进一步降低了。此外，用户量大到一定程度后，带来的网络效应也是巨大的，直接拿下了 20 世纪初美国的线上支付系统的绝大部分，也为后来卖给 eBay 打下了基础。</p>
-<p>这一设计后来也被广泛应用，最常见的像各种打车软件，Uber, Lyft, 滴滴等都是这么做的。不过时间久了之后，这个邀请机制有一定的困境。比如说对于打车软件来说，一个很理想的状况是邀请人把邀请链接发布到自己的社交网络比如说微信朋友圈。但是这里面就有一个矛盾的地方了，越是人脉广、朋友圈质量高的人，对自己朋友圈的质量可能会更在意，他 &#x2F; 她可能越不愿意分享这样的邀请。这里有一个不成熟的想法，被邀请人的奖励还是一样的（比如说 10 元打车券之类），但是给邀请人的奖励不是金钱上的，而是换一个角度，比如邀请一个人，就提供 10 元来资助学生之类，不知道会不会增加大家分享邀请链接的热情。</p>
-<p>像微信红包也有邀请奖励的意思，发红包给朋友，对方最后有余额的话最后需要取出来，那么就要连上银行卡。但是另外一个角度更有意思一点，发红包给对方，对方很有可能会发回来，然后觉得这个还挺好玩的，还想着接着发，但是红包里没钱了啊，那怎么办？于是连上银行卡接着给别人发红包呗。</p>
-<p>此外还有不同的变种，比如说 Flickr 让用户邀请 5 个人以上，然后就可以免费使用 3 个月之类。</p>
-<p><strong>3. 电话簿、邮箱导入</strong></p>
-<p>白岩松说过：谁控制了电话本，谁就控制了互联网入口。（郑重声明一下，这是开玩笑的。）</p>
-<p>社交网络相关的基本都会用来这一点，比如说微信通过导入电话簿（以及 QQ）添加好友以及邀请好友，LinkedIn 通过导入邮件联系人等等。可以说基本每一个带社交属性的网站、App 都会做这个功能，因为用处实在是太大了。</p>
-<p>随着时代的发展，像微信这种社交平台类软件也慢慢取代了电话簿、邮箱的功能，一个明显的趋势就是一些新生 App 可以通过诸如微信、微博直接注册、登陆。一方面节省了注册的时间，基本上点一两下就可以了，另一方面是便于分享到社交网络上，进一步带来新的用户，比如说常见的健身类 App 像 Nike+, Keep 等。</p>
-<p><strong>4. Airbnb 整合 Craigslist</strong></p>
-<p>也是用户增长的经典案例之一了。在其发展早期，Airbnb 的工程师逆向工程了 Craigslist 的发贴机制，让 Airbnb 的用户能够很方便的把房屋信息同步发布到 Craigslist 上。印象中这个功能是一个工程师和一个设计师合计了一下，然后花了一两周的时间做出来的。很久之前看的一个视频里讲的，记得可能不准确了。</p>
-<p>这里多说一句 Craigslist, 美国之外的朋友估计很少用到，因为这个网站的确是有点另类，风格极其简单，N 年不（怎么）变，就长下面这样，咋一看还以为十年前的网站，也就类似 <a target="_blank" rel="noopener" href="http://ptt.cc/">ptt.cc</a> 这样的网站可以一拼了。</p>
-<p><img src="http://pic2.zhimg.com/70/e240ed2b9f31c75a2125830f9fb3fc39_b.jpg"></p>
-<p><strong>5. 自带小尾巴</strong></p>
-<p>这个比较古老了，二十年前，电子邮箱还是跟网络服务商绑定的时候，Hotmail 推出了可以独立于网络服务商的邮箱服务，同时在用户发出的邮箱末尾会自带个小尾巴，大意是这封邮件是通过免费的 Hotmail 发出的，点击这个链接也来领取你的免费邮箱吧。</p>
-<p><strong>6. 邀请答题</strong></p>
-<p>大致就是像知乎，Quora 这种问答社区发现，如果用户答了 N 个题（比如说三个）的话，用户的留存、粘度会大大增加，于是运营人员就会“伪装”成普通用户去邀请大家答题。</p>
-<p><strong>7. 自动关注</strong></p>
-<p>Twitter 应该是比较早做这个的，他们发现如果用户关注了一定数量的人，那么用户活性、留存都会大幅提高，于是就推出了自动关注功能，让新注册的用户会默认关注一些人。除了自动关注用户，有的会是自动关注一些主题，比如说知乎，Quora, Pinterest 都有类似机制。</p>
-<p><strong>8. 注册导向</strong></p>
-<p>如果对比一下现在很多网站跟几年前的区别，有很多网站主页都设计成注册导向的，比如说知乎，打开首面默认界面就是注册新用户。</p>
-<p>再举一个例子，Dropbox 的首页简化成两点，一个是视频让用户了解 Dropbox 是怎么用的，另外一个就是注册了，对比几年前的风格，目的明确了不少。</p>
-<p>参考这里：<a target="_blank" rel="noopener" href="https://blog.kissmetrics.com/dropbox-hacked-growth/">https://blog.kissmetrics.com/dropbox-hacked-growth/</a></p>
-<p><strong>9. 邀请码机制</strong></p>
-<p>像 Gmail 刚出来的时候，需要邀请码才能注册，无形中给用户带来一种：这玩意儿很有价值，我要省着点用的感觉。后来像 Mailbox 初期也是需要邀请码的，硬件方面像一加手机刚发布的时候也有这么个策略，感觉效果还不错。</p>
-<p>知乎早期好像也是邀请机制的吧，可惜我没赶上。</p>
-<p>当然还有 1024 的邀请码机制（咦，这是个什么东西？）</p>
-<p><strong>10. 点赞机制</strong></p>
-<p>这个更多是体现在用户粘性方面，跟用户增长的关系要小一点，不过运用实在是太广泛了，社交类软件基本上就没有不用的，不信打开手机看看，有多少 App 是能点赞的。</p>
-
-      
+        <div class="post-date">2023.06.04</div>
     </div>
-
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+    <div class="post">
+        <a class="post-title" href="/posts/1494287584.html">考研信息汇总 | 2025</a>
+        <div class="post-except">
+            
+25考研时间节点
+预报名：2024年9月份下旬
+正式报名：2024年10月份中下旬
+打印准考证：2024年12月份中下旬
+初试：2024年12月下旬（一般在12月份倒数第二周的周六日，即圣诞节前后）
+查分：2025年2月份
+国家线&#x2F;自划线公布：2025年3月份
+复试&#x2F;调剂&#x2F;拟录取：2025年3月份中下旬
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/posts/16107.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="后山漫雾">
-      <meta itemprop="description" content="一个简单的博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="后山漫雾">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/posts/16107.html" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2023-06-03 22:58:33" itemprop="dateCreated datePublished" datetime="2023-06-03T22:58:33+08:00">2023-06-03</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2023-06-04 11:49:55" itemprop="dateModified" datetime="2023-06-04T11:49:55+08:00">2023-06-04</time>
-              </span>
-
-          <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>78</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1 分钟</span>
-            </span>
-
+考研四条线
+单科线：即英语&#x2F;政治&#x2F;数学&#x2F;专业课的单科分数线
+全国34所自划线院校有自己的单科线，其余学校是国家
+            <a class="read-more" href="/posts/1494287584.html"> ... </a>
         </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
+        <div class="post-date">2023.06.04</div>
     </div>
-
     
+    <div class="post">
+        <a class="post-title" href="/posts/16107.html">Hello World</a>
+        <div class="post-except">
+            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot
+            <a class="read-more" href="/posts/16107.html"> ... </a>
+        </div>
+        <div class="post-date">2023.06.03</div>
+    </div>
     
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+</div>
+
+                <div class="footer">
+    <span>Copyright © 2022 后山漫雾</span>
+    <span>Theme Designed By <a target="_blank" href="https://zheli.design/one-paper">這李設計</a></span>
+</div>
 
 
-  
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
 
+<script src="/js/highlight.min.js"></script>
 
-          </div>
-          
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
 
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
-    }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
-      }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
-  }
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
 </script>
 
+            </div>
         </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">后山漫雾</p>
-  <div class="site-description" itemprop="description">一个简单的博客</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">5</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
-        <span class="site-state-item-name">标签</span>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="https://github.com/091020" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;091020" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="mailto:dxw2213254227@gmail.com" title="E-Mail → mailto:dxw2213254227@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2023</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">后山漫雾</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
-    </span>
-    <span title="站点总字数">4k</span>
-    <span class="post-meta-divider">|</span>
-    <span class="post-meta-item-icon">
-      <i class="fa fa-coffee"></i>
-    </span>
-    <span title="站点阅读时长">15 分钟</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
-
-
-        
-<div class="busuanzi-count">
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-</div>
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
-</body>
+    </body>
 </html>
